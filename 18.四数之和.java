@@ -17,6 +17,7 @@ class Solution {
             // 因为已经排序好， 所以后面不可能有三个数字加和大于0，直接返回结果
             // 但是这里给的数组可能有负数，所以此优化过程注释掉
             // if(nums[j] > target) return lists;
+            
             // 重复元素跳过
             if(j > 0 && nums[j] == nums[j-1]) continue;
             
