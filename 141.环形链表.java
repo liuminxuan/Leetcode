@@ -19,6 +19,7 @@
 public class Solution {
     public boolean hasCycle(ListNode head) {
        if(head == null || head.next == null) return false;
+        // 快慢指针，如果是环形链表，快指针一定会领先慢指针一圈并与慢指针相等
         ListNode low = head;
         ListNode fast = head.next;
         while(fast != null && fast.next != null){
