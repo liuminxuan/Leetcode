@@ -7,7 +7,7 @@
 // @lc code=start
 class Solution {
     public double findMaxAverage(int[] nums, int k) {
-
+        
     }
 }
 // @lc code=end
