@@ -29,7 +29,8 @@ class Solution {
         // if(root.left == null && root.right == null) return 1;
         int left = countNode(root.left);
         int right = countNode(root.right);
-        // 
+        // 拿 [1, 2]这个测试用例简单来看，右子树为空（那不就没有叶子节点吗），
+        // 题目问的是到叶子节点的最短距离，所以就返回 左子树left + 1。
         if(root.left == null) return right + 1;
         else if(root.right == null) return left + 1;
         else return Math.min(left, right) + 1;
